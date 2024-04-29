@@ -1,1 +1,1 @@
-# <span style="color:blue">*This is Blue italic.*</span>
+# Stock Market data engine using Kafka
