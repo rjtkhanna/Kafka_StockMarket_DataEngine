@@ -16,7 +16,7 @@ This pipeline extracts data from a .csv file containing 100,000+ rows and stores
 ![alt text](https://github.com/rjtkhanna/Kafka_stockMarket_dataEngine/blob/main/20240427_kafka_stock_market_project_diagram.jpg?raw=true)
 
 ## Getting Started
-### Installing and Configuring Apache Kafka on EC2
+### Installing, Configuring And Starting Apache Kafka on EC2
 Use the following command to download Apache Kafka: \
 `wget https://downloads.apache.org/kafka/3.5.2/kafka_2.12-3.5.2.tgz`
 
@@ -39,6 +39,21 @@ Use the following command to allot memory to kafka server \
 `export KAFKA_HEAP_OPTS="-Xmx256M -Xms128M"` \
 `cd kafka` \
 `bin/kafka-server-start.sh config/server.properties`
+
+Create the topic: \
+Duplicate the session & enter in a new console \
+`cd kafka` \
+`bin/kafka-topics.sh --create --topic demo_testing --bootstrap-server Put the Public IP of your EC2 Instance:9092 --replication-factor 1 --partitions 1`
+
+Start Producer: \
+`bin/kafka-console-producer.sh --topic demo_testing --bootstrap-server Put the Public IP of your EC2 Instance:9092`
+
+Start Consumer: \
+Duplicate the session & enter in a new console \
+`cd kafka` \
+`bin/kafka-console-consumer.sh --topic demo_testing --bootstrap-server Put the Public IP of your EC2 Instance:9092`
+`
+
 
 
 
