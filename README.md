@@ -13,4 +13,6 @@ This pipeline extracts data from a .csv file containing 100,000+ rows and stores
 - Amazon Athena
 
 ## Architecture Diagram
+<img width="548" alt="image" src="https://github.com/rjtkhanna/Kafka_stockMarket_dataEngine/assets/127062331/857a41ac-2901-4527-99d2-a66ce613582b">
+
 
