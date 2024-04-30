@@ -36,8 +36,8 @@ Start Zookeeper: \
 
 Start Kafka after duplicating the session: \
 Use the following command to allot memory to kafka server \
-`export KAFKA_HEAP_OPTS="-Xmx256M -Xms128M"`
-`cd kafka`
+`export KAFKA_HEAP_OPTS="-Xmx256M -Xms128M"` \
+`cd kafka` \
 `bin/kafka-server-start.sh config/server.properties`
 
 
