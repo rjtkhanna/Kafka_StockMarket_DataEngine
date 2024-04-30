@@ -15,4 +15,7 @@ This pipeline extracts data from a .csv file containing 100,000+ rows and stores
 ## Architecture Diagram
 ![alt text](https://github.com/rjtkhanna/Kafka_stockMarket_dataEngine/blob/main/20240427_kafka_stock_market_project_diagram.jpg?raw=true)
 
+## Getting Started
+### Dependencies
+
 
