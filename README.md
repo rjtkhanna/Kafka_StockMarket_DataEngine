@@ -16,6 +16,8 @@ This pipeline extracts data from a .csv file containing 100,000+ rows and stores
 ![alt text](https://github.com/rjtkhanna/Kafka_stockMarket_dataEngine/blob/main/20240427_kafka_stock_market_project_diagram.jpg?raw=true)
 
 ## Getting Started
-### Dependencies
+### Installing Apache Kafka on EC2
+Use the following command to download Apache Kafka:
+'wget https://downloads.apache.org/kafka/3.5.2/kafka_2.12-3.5.2.tgz'
 
 
