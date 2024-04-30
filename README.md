@@ -27,6 +27,19 @@ Unzip .tgz file and rename it: \
 Install Java: \
 `sudo yum install java-1.8.0-openjdk`
 
+Change ADVERTISED_LISTENERS to public ip of the EC2 instance by executing the following command:
+`cd kafka` \
+`sudo nano config/server.properties`
+
+Start Zookeeper: \
+`bin/zookeeper-server-start.sh config/zookeeper.properties`
+
+Start Kafka after duplicating the session: \
+Use the following command to allot memory to kafka server \
+`export KAFKA_HEAP_OPTS="-Xmx256M -Xms128M"`
+`cd kafka`
+`bin/kafka-server-start.sh config/server.properties`
+
 
 
 
