@@ -18,6 +18,6 @@ This pipeline extracts data from a .csv file containing 100,000+ rows and stores
 ## Getting Started
 ### Installing Apache Kafka on EC2
 Use the following command to download Apache Kafka:
-'wget https://downloads.apache.org/kafka/3.5.2/kafka_2.12-3.5.2.tgz'
+`wget https://downloads.apache.org/kafka/3.5.2/kafka_2.12-3.5.2.tgz`
 
 
