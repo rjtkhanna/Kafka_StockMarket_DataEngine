@@ -52,6 +52,8 @@ Start Consumer: \
 Duplicate the session & enter in a new console \
 `cd kafka` \
 `bin/kafka-console-consumer.sh --topic demo_testing --bootstrap-server Put the Public IP of your EC2 Instance:9092`
+
+## Loading Data into S3 Bucket using Apache Kafka
 `
 
 
