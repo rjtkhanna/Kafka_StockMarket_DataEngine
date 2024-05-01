@@ -59,7 +59,7 @@ To load data into S3 Bucket please run the following two files in the order list
 - [Kafka_Consumer.ipynb](https://github.com/rjtkhanna/Kafka_stockMarket_dataEngine/blob/main/Kafka_Consumer.ipynb)
 
 ### Creating AWS Glue Crawler using CLI
-To create a crawler that would load data from the S3 .json file to Glue database, the following commands are used on AWS CLI:
+To create a crawler that would load data from the S3 .json files to Glue database, following commands are used on AWS CLI:
 ```
 aws glue create-crawler /
 --name "crawler name" /
