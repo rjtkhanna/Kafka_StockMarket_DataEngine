@@ -61,14 +61,14 @@ To load data into S3 Bucket please run the following two files in the order list
 ### Creating AWS Glue Crawler using CLI
 To create a crawler that would load data from the S3 .json files to Glue database, following commands are used on AWS CLI:
 ```
-aws glue create-crawler /
---name "crawler name" /
---role "IAM role" /
---database-name "database name" /
---description "suitable description" /
+aws glue create-crawler 
+--name "crawler name" 
+--role "IAM role" 
+--database-name "database name" 
+--description "suitable description" 
 --targets S3Targets=[{Path="s3 bucket path/"}]
 ```
-Start the crawler using following command in CLI: /
+Start the crawler using following command in CLI: \
 `aws glue start-crawler --name crawler name`
 
 
