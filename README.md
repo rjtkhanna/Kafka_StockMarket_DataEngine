@@ -68,7 +68,7 @@ aws glue create-crawler /
 --description "suitable description" /
 --targets S3Targets=[{Path="s3 bucket path/"}]
 ```
-Start the crawler using following command in CLI:
+Start the crawler using following command in CLI: /
 `aws glue start-crawler --name crawler name`
 
 
