@@ -53,7 +53,7 @@ Duplicate the session & enter in a new console \
 `cd kafka` \
 `bin/kafka-console-consumer.sh --topic demo_testing --bootstrap-server Put the Public IP of your EC2 Instance:9092`
 
-## Loading Data into S3 Bucket using Apache Kafka
+### Loading Data into S3 Bucket using Apache Kafka
 In order to load data into S3 Bucket please run following two files in the order listed:
 - [Kafka_Producer.ipynb](https://github.com/rjtkhanna/Kafka_stockMarket_dataEngine/blob/main/Kafka_Producer.ipynb)
 - [Kafka_Consumer.ipynb](https://github.com/rjtkhanna/Kafka_stockMarket_dataEngine/blob/main/Kafka_Consumer.ipynb)
