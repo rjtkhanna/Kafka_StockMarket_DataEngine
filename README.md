@@ -42,16 +42,20 @@ Use the following command to allot memory to kafka server \
 
 Create the topic: \
 Duplicate the session & enter in a new console \
-`cd kafka` \
-`bin/kafka-topics.sh --create --topic demo_testing --bootstrap-server Put the Public IP of your EC2 Instance:9092 --replication-factor 1 --partitions 1`
+```
+cd kafka
+bin/kafka-topics.sh --create --topic demo_testing --bootstrap-server Put the Public IP of your EC2 Instance:9092 --replication-factor 1 --partitions 1`
+```
 
 Start Producer: \
 `bin/kafka-console-producer.sh --topic demo_testing --bootstrap-server Put the Public IP of your EC2 Instance:9092`
 
 Start Consumer: \
 Duplicate the session & enter in a new console \
-`cd kafka` \
-`bin/kafka-console-consumer.sh --topic demo_testing --bootstrap-server Put the Public IP of your EC2 Instance:9092`
+```
+cd kafka
+bin/kafka-console-consumer.sh --topic demo_testing --bootstrap-server Put the Public IP of your EC2 Instance:9092
+```
 
 ### Loading Data into S3 Bucket using Apache Kafka
 To load data into S3 Bucket please run the following two files in the order listed:
