@@ -31,7 +31,7 @@ Change ADVERTISED_LISTENERS to public ip of the EC2 instance by executing the fo
 `cd kafka` \
 `sudo nano config/server.properties`
 
-Start Zookeeper: 
+Start Zookeeper: \
 `bin/zookeeper-server-start.sh config/zookeeper.properties`
 
 Start Kafka after duplicating the session: \
