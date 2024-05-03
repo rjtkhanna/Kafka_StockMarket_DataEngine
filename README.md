@@ -41,18 +41,18 @@ Use the following command to allot memory to kafka server \
 `bin/kafka-server-start.sh config/server.properties`
 
 Create the topic: \
-Duplicate the session & enter in a new console \
+Duplicate the session & enter in a new console
 ```
 cd kafka
 bin/kafka-topics.sh --create --topic demo_testing --bootstrap-server Put the Public IP of your EC2 Instance:9092 --replication-factor 1 --partitions 1
 ```
 
-Start Producer: \
+Start Kafka Producer:
 ```
 bin/kafka-console-producer.sh --topic demo_testing --bootstrap-server Put the Public IP of your EC2 Instance:9092
 ```
 
-Start Consumer: \
+Start Kafka Consumer:
 Duplicate the session & enter in a new console \
 ```
 cd kafka
