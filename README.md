@@ -71,7 +71,7 @@ aws glue create-database
 --database-input "{\"Name\":\"<dB Name>\", \"Description\":\"This dB is created using AWS CLI\"}"
 ```
 
-### Creating AWS Glue Crawler using CLI
+### Creating and running AWS Glue Crawler using CLI
 To create a crawler that would load data from the S3 .json files to Glue database, following commands are used on AWS CLI:
 ```
 aws glue create-crawler 
