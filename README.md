@@ -44,19 +44,19 @@ Create the topic: \
 Duplicate the session & enter in a new console
 ```
 cd kafka
-bin/kafka-topics.sh --create --topic demo_testing --bootstrap-server Put the Public IP of your EC2 Instance:9092 --replication-factor 1 --partitions 1
+bin/kafka-topics.sh --create --topic <topic name> --bootstrap-server <Public IP of your EC2 Instance>:9092 --replication-factor 1 --partitions 1
 ```
 
 Start Kafka Producer:
 ```
-bin/kafka-console-producer.sh --topic demo_testing --bootstrap-server Put the Public IP of your EC2 Instance:9092
+bin/kafka-console-producer.sh --topic <topic name> --bootstrap-server <Public IP of your EC2 Instance>:9092
 ```
 
 Start Kafka Consumer:
 Duplicate the session & enter in a new console \
 ```
 cd kafka
-bin/kafka-console-consumer.sh --topic demo_testing --bootstrap-server Put the Public IP of your EC2 Instance:9092
+bin/kafka-console-consumer.sh --topic <topic name> --bootstrap-server <Public IP of your EC2 Instance>:9092
 ```
 
 ### Loading Data into S3 Bucket using Apache Kafka
@@ -68,21 +68,21 @@ To load data into S3 Bucket please run the following two files in the order list
 To create an AWS Glue Database in which data would be loaded and from which we can query from Athena:
 ```
 aws glue create-database
---database-input "{\"Name\":\"mytestdatabase-CLI\", \"Description\":\"This dB is created using AWS CLI\"}"
+--database-input "{\"Name\":\"<dB Name>\", \"Description\":\"This dB is created using AWS CLI\"}"
 ```
 
 ### Creating AWS Glue Crawler using CLI
 To create a crawler that would load data from the S3 .json files to Glue database, following commands are used on AWS CLI:
 ```
 aws glue create-crawler 
---name "crawler name" 
---role "IAM role" 
---database-name "database name" 
---description "suitable description" 
---targets S3Targets=[{Path="s3 bucket path/"}]
+--name "<crawler name>" 
+--role "<IAM role>" 
+--database-name "<database name>" 
+--description "<suitable description>" 
+--targets S3Targets=[{Path="<s3 bucket path>/"}]
 ```
 Start the crawler using following command in CLI: \
-`aws glue start-crawler --name crawler name`
+`aws glue start-crawler --name <crawler name>`
 
 
 
