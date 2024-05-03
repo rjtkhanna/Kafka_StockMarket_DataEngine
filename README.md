@@ -27,7 +27,7 @@ Unzip .tgz file and rename it: \
 Install Java: \
 `sudo yum install java-1.8.0-openjdk`
 
-Change ADVERTISED_LISTENERS to public ip of the EC2 instance by executing the following command:
+Change ADVERTISED_LISTENERS to public ip of the EC2 instance by executing the following command: \
 `cd kafka` \
 `sudo nano config/server.properties`
 
@@ -57,6 +57,13 @@ Duplicate the session & enter in a new console \
 To load data into S3 Bucket please run the following two files in the order listed:
 - [Kafka_Producer.ipynb](https://github.com/rjtkhanna/Kafka_stockMarket_dataEngine/blob/main/Kafka_Producer.ipynb)
 - [Kafka_Consumer.ipynb](https://github.com/rjtkhanna/Kafka_stockMarket_dataEngine/blob/main/Kafka_Consumer.ipynb)
+
+### Creating AWS Glue Database
+To create an AWS Glue Database in which data would be loaded and from which we can query from Athena:
+```
+aws glue create-database
+--database-input "{\"Name\":\"mytestdatabase-CLI\", \"Description\":\"This dB is created using AWS CLI\"}"
+```
 
 ### Creating AWS Glue Crawler using CLI
 To create a crawler that would load data from the S3 .json files to Glue database, following commands are used on AWS CLI:
