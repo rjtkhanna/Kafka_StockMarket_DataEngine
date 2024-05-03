@@ -48,7 +48,9 @@ bin/kafka-topics.sh --create --topic demo_testing --bootstrap-server Put the Pub
 ```
 
 Start Producer: \
-`bin/kafka-console-producer.sh --topic demo_testing --bootstrap-server Put the Public IP of your EC2 Instance:9092`
+```
+bin/kafka-console-producer.sh --topic demo_testing --bootstrap-server Put the Public IP of your EC2 Instance:9092
+```
 
 Start Consumer: \
 Duplicate the session & enter in a new console \
