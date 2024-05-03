@@ -21,24 +21,30 @@ Use the following command to download Apache Kafka: \
 `wget https://downloads.apache.org/kafka/3.5.2/kafka_2.12-3.5.2.tgz`
 
 Unzip .tgz file and rename it: \
-`tar -xvf kafka_2.12-3.5.2.tgz` \
-`mv kafka_2.12-3.5.2 kafka`
+```
+tar -xvf kafka_2.12-3.5.2.tgz
+mv kafka_2.12-3.5.2 kafka
+```
 
 Install Java: \
 `sudo yum install java-1.8.0-openjdk`
 
 Change ADVERTISED_LISTENERS to public ip of the EC2 instance by executing the following command: \
-`cd kafka` \
-`sudo nano config/server.properties`
+```
+cd kafka
+sudo nano config/server.properties
+```
 
 Start Zookeeper: \
 `bin/zookeeper-server-start.sh config/zookeeper.properties`
 
 Start Kafka after duplicating the session: \
 Use the following command to allot memory to kafka server \
-`export KAFKA_HEAP_OPTS="-Xmx256M -Xms128M"` \
-`cd kafka` \
-`bin/kafka-server-start.sh config/server.properties`
+```
+export KAFKA_HEAP_OPTS="-Xmx256M -Xms128M"
+cd kafka
+bin/kafka-server-start.sh config/server.properties
+```
 
 Create the topic: \
 Duplicate the session & enter in a new console
@@ -83,10 +89,3 @@ aws glue create-crawler
 ```
 Start the crawler using following command in CLI: \
 `aws glue start-crawler --name <crawler name>`
-
-
-
-
-
-
-
