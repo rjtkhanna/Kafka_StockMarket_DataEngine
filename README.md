@@ -89,3 +89,6 @@ aws glue create-crawler
 ```
 Start the crawler using following command in CLI: \
 `aws glue start-crawler --name <crawler name>`
+
+After the data is loaded into database, we can query and analyze it using AWS Athena and SQL.
+
