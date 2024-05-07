@@ -92,3 +92,6 @@ Start the crawler using following command in CLI: \
 
 After the data is loaded into database, we can query and analyze it using AWS Athena and SQL.
 
+## Credits
+[Stock Market Real-Time Data Analysis Using Kafka | End-To-End Data Engineering Project](https://www.youtube.com/watch?v=KerNf0NANMo)
+
